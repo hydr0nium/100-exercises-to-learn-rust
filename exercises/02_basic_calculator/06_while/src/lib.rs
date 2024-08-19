@@ -8,8 +8,10 @@ pub fn factorial(n: u32) -> u32 {
         return 1;
     }
     let mut sum = 1;
-    for i in 1..=n {
+    let mut i = 1;
+    while i <= n {
         sum *= i;
+        i += 1;
     }
     sum
 }
